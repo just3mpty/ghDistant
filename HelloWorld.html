@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Hello world</title>
+        <script src="Constantes.js"></script>
         <style>
             body {
                 width: 200px;
@@ -23,6 +24,10 @@
         </style>
     </head>
     <body>
-        <div id="label">Hello world</div>
+        <div id="label"></div>
+        <script>
+            document.title = HELLO_WORLD_TITLE;
+            document.getElementById("label").textContent = HELLO_WORLD_TEXT;
+        </script>
     </body>
 </html>
